@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #191919;
+}
+
+header {
+  background-color: #ffc017;
+  border-bottom: solid 1px #191919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.container_logo_nav {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  justify-content: space-between;
+  width: 1192px;
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li {
+  font-size: 14px;
+  padding-inline: 11px;
+}
+
+nav ul li:last-child {
+  padding-inline: 20px;
+  background: #191919;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  margin-left: 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  position: relative;
+  top: 75px;
+}
+.container_top {
+  background-color: #ffc017;
+  height: 456px;
+  border-bottom: solid 1px #191919;
+  align-content: center;
+  font-weight: 400;
+}
+
+.container_top div {
+  width: 1192px;
+  margin-inline: auto;
+}
+
+.container_top h1 {
+  font-family: "Spectral", serif;
+  font-size: 106px;
+  letter-spacing: -0.05em;
+  line-height: 95px;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.container_top h2 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  width: 40%;
+}
+
+.container_top img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container_top button {
+  width: 213px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 8px 0;
+  border-radius: 50px;
+  border: none;
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.container_box {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  max-width: 1192px;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container_box > div:first-of-type {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 9px;
+  text-transform: uppercase;
+}
+
+.container_box > div:first-of-type img {
+  margin-right: 10px;
+}
+
+.container_box > div:first-of-type h3 {
+  font-size: 13px;
+}
+
+.box {
+  display: flex;
+  width: 350px;
+  align-items: baseline;
+  margin-bottom: 17px;
+}
+
+.number {
+  display: flex;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.firstrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lastrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box_list_description .lastrow {
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.lastrow img {
+  padding-left: 5px;
+}
+
+.box span {
+  color: #cccccc;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.author {
+  display: flex;
+  font-size: 13px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.box img,
+.box_list img {
+  width: 20px;
+  border-radius: 5px;
+}
+
+.box img.circle,
+.box_list img.circle {
+  border-radius: 50%;
+  border: 1px solid #f2f2f2;
+}
+
+.box h4 {
+  color: #242424;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.box p,
+.box_list p {
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
+.box img.star {
+  width: 15px;
+}
+
+.list {
+  display: flex;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 56px;
+  max-width: 1192px;
+  margin-inline: auto;
+}
+
+.container_list {
+  display: flex;
+  padding-block: 12px;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.box_list {
+  display: flex;
+  margin-bottom: 48px;
+  align-items: center;
+}
+
+.box_list_description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.box_list_description h4 {
+  color: #242424;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.box_list_description span {
+  color: #6b6b6b;
+}
+
+.box_list_description span.type {
+  background-color: #f2f2f2;
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 13px;
+}
+
+.box_list_img {
+  display: flex;
+  width: 100%;
+}
+
+.box_list_img img {
+  width: 200px;
+}
+
+.lastrow_text,
+.lastrow_bookmark {
+  display: flex;
+}
