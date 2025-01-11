@@ -14,3 +14,14 @@ window.addEventListener("scroll", () => {
     aGetStarted.classList.remove("achanged");
   }
 });
+
+tmpArr = [];
+const myArrg = document.querySelector("svg").querySelectorAll("g[opacity]");
+const changeMyEmme = () => {
+  let myEmme = myArrg[Math.floor(Math.random() * myArrg.length)];
+  myEmme.setAttribute("opacity", 0);
+  setInterval(() => {
+    myEmme.setAttribute("opacity", 1);
+  }, 400);
+};
+setInterval(changeMyEmme, 200);
