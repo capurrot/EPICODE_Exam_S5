@@ -220,13 +220,17 @@ main {
 .box img,
 .box_list img {
   width: 20px;
-  border-radius: 5px;
 }
 
 .box img.circle,
 .box_list img.circle {
   border-radius: 50%;
   border: 1px solid #f2f2f2;
+}
+
+.box img.rounded,
+.box_list img.rounded {
+  border-radius: 5px;
 }
 
 .box p,
